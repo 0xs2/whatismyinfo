@@ -19,7 +19,6 @@ const limiter = rateLimit({
 app.set("view engine", "ejs")
 
 app.use('/', limiter);
-app.use('/api', limiter);
 app.use(helmet());
 app.use(compression());
 app.use(express.static('public'));
