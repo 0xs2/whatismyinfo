@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="language" content="English">
+<meta name="title" content="What is my info?">
+<meta name="description" content="Wondering what your IP is or other information? Get your IP and other related stuff online!">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://whatismyinfo.net">
+<link rel="icon" href="/favicon.ico">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+<meta name="robots" content="index, follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPKRX4NTE2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-DPKRX4NTE2');
+</script>
+<title>What is my info?</title>
+</head>
+<body>
+<h2>What is my info?</h2>
+<p>API endpoint: <a href="?api=true"><code>?api=true</code></a></p>
+<pre><% if (typeof error != "undefined") { %><%= error %><% } else { %>
+IP Address: <%= data.ip_address %> 
+Connection Type: <%= data.connection_type %> 
+ISP: <%= data.isp %> 
+VPN: <%= data.is_vpn %>
+Browser: <%= data.browser %>
+Operating System: <%= data.os %> 
+Timezone: <%= data.timezone %> 
+Country: <%= data.country %> 
+Region: <%= data.region %>
+City: <%= data.city %> 
+Portal Code: <%= data.postal_code %> 
+Longitude: <%= data.longitude %> 
+Latitude: <%= data.latitude %><% } %> 
+</pre>
+</body>
+</html>

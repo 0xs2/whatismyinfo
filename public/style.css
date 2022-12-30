@@ -1,0 +1,9 @@
+pre {
+    background-color: rgb(235, 235, 235);
+    padding: 5px;
+    border-left: 3px solid rgb(34, 34, 34);
+    }
+body {
+    text-align: left;
+    max-width: 500px;
+}
